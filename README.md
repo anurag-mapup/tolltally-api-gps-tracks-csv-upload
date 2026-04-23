@@ -23,7 +23,7 @@ A single-language (Python) reference implementation demonstrating the TollGuru G
 
 - Python 3.7+
 - `pip` for dependency management
-- A valid [TollGuru API key](https://tollguru.com/developers/get-api-key)
+- A valid [TollGuru API key](https://tollguru.com/blog/get-api-key)
 
 ## Local Setup
 
@@ -52,12 +52,12 @@ This is a client-side script, not a deployed service. Integrate the functions (`
 
 ## Where Config Lives
 
-| Setting | Location |
-|---|---|
-| API key | `TOLLGURU_API_KEY` env var |
-| API base URL | `TOLLGURU_API_URL` in `gps-tracks-csv-upload.py` |
-| Vehicle params | `PARAMETERS` dict in `gps-tracks-csv-upload.py` |
-| Sample data | `Sample-GPS-tracks/` directory |
+| Setting        | Location                                         |
+| -------------- | ------------------------------------------------ |
+| API key        | `TOLLGURU_API_KEY` env var                       |
+| API base URL   | `TOLLGURU_API_URL` in `gps-tracks-csv-upload.py` |
+| Vehicle params | `PARAMETERS` dict in `gps-tracks-csv-upload.py`  |
+| Sample data    | `Sample-GPS-tracks/` directory                   |
 
 ## Known Limitations
 
@@ -67,10 +67,10 @@ This is a client-side script, not a deployed service. Integrate the functions (`
 - Async download uses fixed retry count (5) and delay (5s), not configurable via CLI/env
 - No CLI argument parsing; all config is in-source
 - No error handling for missing API key or network failures
-- GPS CSV format requirements are not documented in this repo; see [TollGuru docs](https://tollguru.com/developers/docs/)
+- GPS CSV format requirements are not documented in this repo; see [TollGuru docs](https://tollguru.com/toll-api-docs)
 
 ## Further Reading
 
-- [TollGuru API Docs](https://tollguru.com/developers/docs/)
+- [TollGuru API Docs](https://tollguru.com/toll-api-docs)
 - [Vehicle type coverage](https://github.com/mapup/tollguru_vehicle_coverage/wiki/Vehicle-types-supported-by-TollGuru)
 - [API parameter examples](https://github.com/mapup/tollguru-api-parameter-examples/tree/main/request-bodies/03-TollTally-GPS-Tracks-To-Toll)
